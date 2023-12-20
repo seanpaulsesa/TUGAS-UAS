@@ -1,0 +1,9 @@
+<?php
+session_start();
+isset($_SESSION['id_pengguna']);
+isset($_SESSION['username']);
+isset($_SESSION['password']);
+isset($_SESSION['nama_lengkap']);
+session_destroy();
+header("Location:index.php");
+?>
